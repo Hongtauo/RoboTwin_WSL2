@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "started_utc": "2026-10-18T18:06:08.694951+08:00",
+  "started_utc": "2026-10-18T10:06:08.694951+00:00",
   "scope": "Repository validation wrapper executed in a disposable GPU container from the existing verified runtime snapshot; original task checkout mounted read-only.",
   "command": "./validate.ps1 -ContainerName <isolated-managed-container> -PlayOnce",
   "cold_bootstrap_executed": false,
