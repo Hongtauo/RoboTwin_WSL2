@@ -1,4 +1,4 @@
-# RoboTwin WSL2 复现
+# 在WSL2 中部署 RoboTwin 并调用GPU进行渲染推理
 
 在 Windows 的 WSL2 Ubuntu 22.04 中，通过 Docker 运行 RoboTwin：**CPU PhysX 物理、GPU 光栅相机渲染、CUDA 运动规划**。这一配置使用 Mesa Dozen 将 Vulkan 转到 D3D12，关闭光追，并对固定版本的 SAPIEN/SVulkan2 做兼容修改。
 
