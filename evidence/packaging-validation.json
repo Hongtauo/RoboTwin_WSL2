@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "started_utc": "2026-10-18T18:06:08.694951+08:00",
+  "scope": "Repository validation wrapper executed in a disposable GPU container from the existing verified runtime snapshot; original task checkout mounted read-only.",
+  "command": "./validate.ps1 -ContainerName <isolated-managed-container> -PlayOnce",
+  "cold_bootstrap_executed": false,
+  "original_container_reconfigured": false,
+  "checks": {
+    "pytorch_cuda": true,
+    "sapien_cpu_physics_and_gpu_raster": true,
+    "cuda_extensions": true,
+    "pip_check": true,
+    "real_expert_play_once": true
+  },
+  "task": {
+    "name": "stack_blocks_two",
+    "embodiment": "aloha-agilex",
+    "seed": 0,
+    "elapsed_seconds": 37.87200600001961,
+    "actions_executed": 8,
+    "action_count_unit": "expert task.move groups returning True",
+    "plan_success": true,
+    "task_success": true,
+    "planned_joints_legal": true,
+    "max_joint_limit_excess_rad": 0.0,
+    "left_planned_segments": 12,
+    "left_planned_waypoints": 2869
+  },
+  "raw_task_report": {
+    "sha256": "eacdbc9d9a2ec97e7f46abbdfbba43cf405227dab774edfcac26b2ceba78c312",
+    "bytes": 12166,
+    "included": false
+  },
+  "executed_source_sha256": {
+    "validate.ps1": "93b388ff6f5b9b7b843283806744e7f69cff17e16f428a5a45f3885f07f57a9f",
+    "tools/host.ps1": "50f2990f90895728439be299bba72f04c8f327a24ccf755226599566348753e3",
+    "workspace/check_base.py": "8b2aac43cefed0d1b386f465811820ac47e204c1aba14dc575eb4c6e726220f8",
+    "workspace/check_sapien.py": "0d23a5a1a8f60bac1451cf5ffff308c321c74a25e97359599c9fa5f69e6e0d51",
+    "workspace/check_cuda_extensions.py": "9bd5fbc2a6fa6de74d8b5cc08a532a106cd7738e845865e335a2683f61d0f4af",
+    "workspace/check_robotwin_task.py": "ab27769d6235edece0b622bff1d01bcd10dcd6ac3c98d12168b1599efbcc2216"
+  },
+  "static_checks": {
+    "powershell_files_parsed": 4,
+    "python_files_parsed": 14,
+    "bash_files_checked": 7,
+    "embedded_python_blocks_parsed": 16,
+    "source_pins_and_dependency_order_reviewed": true
+  },
+  "ownership_checks": {
+    "matching_checkout_accepted": true,
+    "foreign_checkout_rejected": true,
+    "original_unmanaged_container_rejected": true,
+    "compose_project_service_guard_present": true,
+    "process_local_git_safe_directories_negative_and_positive_probe": true
+  },
+  "limitations": [
+    "Uses the existing compiled runtime; does not validate a fresh apt/conda/pip/source build.",
+    "One task and one seed on one GPU; elapsed time is not a performance benchmark."
+  ]
+}

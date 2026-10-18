@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "pytorch3d_knn_squared_distances": [
+    [
+      [
+        1.0
+      ],
+      [
+        1.0
+      ]
+    ]
+  ],
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "curobo_dof": 7,
+  "curobo_ee_position": [
+    [
+      0.08799999952316284,
+      -7.149019874350127e-13,
+      0.9259999990463257
+    ],
+    [
+      0.08799999952316284,
+      -7.149019874350127e-13,
+      0.9259999990463257
+    ]
+  ],
+  "versions": {
+    "torch": "2.4.1+cu121",
+    "torchvision": "0.19.1+cu121",
+    "pytorch3d": "0.7.8",
+    "nvidia-curobo": "0.7.8",
+    "warp-lang": "1.12.0"
+  }
+}

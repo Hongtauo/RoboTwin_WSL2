@@ -1,0 +1,15 @@
+{
+  "mode": "render",
+  "physics": "PhysxCpuSystem",
+  "box_final_z": 0.1999998539686203,
+  "shape": [
+    128,
+    128,
+    4
+  ],
+  "finite": true,
+  "rgb_std": 22.178958247962047,
+  "red_pixels": 272,
+  "output": "sapien_raster.png",
+  "passed": true
+}

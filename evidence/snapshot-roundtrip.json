@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "check": "runtime_snapshot_container_recreation",
+  "checks": {
+    "base_cuda": {
+      "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+      "pytorch": "2.4.1+cu121",
+      "pytorch_cuda": "12.1",
+      "cuda_available": true,
+      "checks": {
+        "pytorch_2_4_1": true,
+        "cuda_12_1_build": true,
+        "cuda_operation": true
+      },
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "cuda_result": [
+        0.0,
+        2.0,
+        4.0,
+        6.0
+      ],
+      "passed": true
+    },
+    "sapien_raster": {
+      "mode": "render",
+      "physics": "PhysxCpuSystem",
+      "box_final_z": 0.1999998539686203,
+      "shape": [
+        128,
+        128,
+        4
+      ],
+      "finite": true,
+      "rgb_std": 22.178958247962047,
+      "red_pixels": 272,
+      "output": "sapien_raster.png",
+      "passed": true
+    },
+    "cuda_extensions": {
+      "passed": true,
+      "pytorch3d_knn_squared_distances": [
+        [
+          [
+            1.0
+          ],
+          [
+            1.0
+          ]
+        ]
+      ],
+      "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+      "curobo_dof": 7,
+      "curobo_ee_position": [
+        [
+          0.08799999952316284,
+          -7.149019874350127e-13,
+          0.9259999990463257
+        ],
+        [
+          0.08799999952316284,
+          -7.149019874350127e-13,
+          0.9259999990463257
+        ]
+      ],
+      "versions": {
+        "torch": "2.4.1+cu121",
+        "torchvision": "0.19.1+cu121",
+        "pytorch3d": "0.7.8",
+        "nvidia-curobo": "0.7.8",
+        "warp-lang": "1.12.0"
+      }
+    }
+  },
+  "pip_check": "No broken requirements found.",
+  "task_play_once_reexecuted_in_this_roundtrip": false,
+  "scope_note": "The snapshot recreation log records base, renderer, CUDA extension and pip checks. The full task evidence comes from the separate seed-0 report."
+}

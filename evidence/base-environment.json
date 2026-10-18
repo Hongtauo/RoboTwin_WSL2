@@ -1,0 +1,19 @@
+{
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "pytorch": "2.4.1+cu121",
+  "pytorch_cuda": "12.1",
+  "cuda_available": true,
+  "checks": {
+    "pytorch_2_4_1": true,
+    "cuda_12_1_build": true,
+    "cuda_operation": true
+  },
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "cuda_result": [
+    0.0,
+    2.0,
+    4.0,
+    6.0
+  ],
+  "passed": true
+}

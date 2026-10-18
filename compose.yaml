@@ -1,0 +1,42 @@
+name: robotwin-wsl-repro
+
+services:
+  robotwin:
+    image: ${ROBOTWIN_IMAGE:-robotwin-wsl:repro}
+    platform: linux/amd64
+    container_name: ${ROBOTWIN_CONTAINER_NAME:-robotwin-repro}
+    hostname: robotwin
+    gpus: all
+    init: true
+    shm_size: 8gb
+    stdin_open: true
+    tty: true
+    working_dir: /workspace
+    command: ["sleep", "infinity"]
+    labels:
+      org.robotwin.repro.managed: "true"
+      org.robotwin.repro.checkout: ${ROBOTWIN_CHECKOUT_ID:?Run setup.ps1 or start.ps1 from PowerShell}
+    environment:
+      VK_ICD_FILENAMES: /usr/share/vulkan/icd.d/dzn_icd.x86_64.json
+      VK_DRIVER_FILES: /usr/share/vulkan/icd.d/dzn_icd.x86_64.json
+      SAPIEN_DISABLE_RAY_TRACING: "1"
+      ROBOTWIN_CAMERA_SHADER: default
+      __EGL_VENDOR_LIBRARY_DIRS: /usr/share/glvnd/egl_vendor.d
+      LD_LIBRARY_PATH: /usr/lib/wsl/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+      CONDA_DEFAULT_ENV: robotwin
+      CONDA_PREFIX: /opt/conda/envs/robotwin
+      PATH: /opt/conda/envs/robotwin/bin:/opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    volumes:
+      - type: bind
+        source: ./workspace
+        target: /workspace
+      - type: bind
+        source: .
+        target: /opt/robotwin-repro
+        read_only: true
+      - type: bind
+        source: /usr/lib/wsl
+        target: /usr/lib/wsl
+        read_only: true
+        bind:
+          create_host_path: false

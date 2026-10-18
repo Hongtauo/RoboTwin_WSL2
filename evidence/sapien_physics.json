@@ -1,0 +1,6 @@
+{
+  "mode": "physics",
+  "physics": "PhysxCpuSystem",
+  "box_final_z": 0.1999998539686203,
+  "passed": true
+}

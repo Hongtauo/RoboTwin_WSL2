@@ -1,0 +1,10 @@
+# Used only by setup.ps1 to create the initial, unconfigured container.
+services:
+  robotwin:
+    image: ${ROBOTWIN_BASE_IMAGE:-docker.1ms.run/pytorch/pytorch:2.4.1-cuda12.1-cudnn9-devel@sha256:9057ed8f4550b37a9715e59ff484fa5502a34e94a5159e02d8174f55ca8be29b}
+    environment:
+      CONDA_DEFAULT_ENV: base
+      CONDA_PREFIX: /opt/conda
+      PATH: /opt/conda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      ROBOTWIN_BUILD_JOBS: ${ROBOTWIN_BUILD_JOBS:-2}
+      ROBOTWIN_CUDA_JOBS: ${ROBOTWIN_CUDA_JOBS:-2}

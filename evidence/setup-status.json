@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "updated_at": "2026-10-18T17:15:08.1201560+08:00",
+  "base_image": "docker.1ms.run/pytorch/pytorch:2.4.1-cuda12.1-cudnn9-devel",
+  "local_image": "robotwin-wsl:runtime",
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.10.1",
+    "torch": "2.4.1+cu121",
+    "torchvision": "0.19.1+cu121",
+    "setuptools": "69.5.1",
+    "warp-lang": "1.12.0",
+    "nvidia-curobo": "0.7.8",
+    "pytorch3d": "0.7.8",
+    "setuptools-scm": "8.1.0",
+    "pybind11": "2.13.6",
+    "ninja": "1.13.2",
+    "python": "3.10.22",
+    "sapien": "3.0.0b1+wsldzn"
+  },
+  "robotwin_revision": "ea8b21121ebb3cd201ff5b3fe361944ac94eda3f",
+  "physics": "PhysxCpuSystem",
+  "rendering": {
+    "alias": "pci:0000:00:00.0",
+    "can_render": true,
+    "cuda_id": -1,
+    "name": "Microsoft Direct3D12 (NVIDIA GeForce RTX 4070 Ti SUPER)",
+    "pci_string": "0000:00:00.0"
+  },
+  "planning": "CuRobo on CUDA GPU 0",
+  "camera_shader": "default (raster)",
+  "checks": {
+    "pytorch_cuda": true,
+    "sapien_physics": true,
+    "sapien_gpu_raster": true,
+    "pytorch3d_gpu_knn": true,
+    "curobo_gpu_kinematics": true,
+    "robotwin_play_once": true,
+    "expert_move_groups": 8,
+    "planned_joints_legal": true,
+    "task_success": true,
+    "snapshot_roundtrip": true
+  },
+  "tested_task": "stack_blocks_two",
+  "tested_embodiment": "aloha-agilex",
+  "tested_seed": 0,
+  "tested_scope": [
+    "head RGB offscreen",
+    "clean procedural blocks",
+    "one expert demonstration"
+  ],
+  "full_asset_library_downloaded": false,
+  "required_native_library_prefix": "/opt/robotwin-build/SAPIEN/sapien_build/_sapien_install/lib",
+  "task_report": "robotwin_task.json",
+  "final_image": "robotwin_final.png",
+  "note": "The custom SAPIEN wheel uses native libraries retained in the image. Preserve /opt/robotwin-build. The full object/background library and policy environments are not installed.",
+  "snapshot_roundtrip_log": "snapshot-roundtrip.json"
+}

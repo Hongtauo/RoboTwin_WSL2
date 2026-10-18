@@ -1,0 +1,23 @@
+# Generated checkouts, assets, wheels, caches and machine-specific state.
+/workspace/RoboTwin/
+/workspace/cache/
+/workspace/diagnostics/
+/workspace/requirements-core.txt
+/workspace/bootstrap-state/
+/logs/
+/downloads/
+/tools/downloads/
+/.env
+/container-info.json
+/setup-status.json
+__pycache__/
+*.py[cod]
+*.whl
+*.tar
+*.tar.gz
+*.zip
+*.part
+*.partial
+*.log
+.DS_Store
+Thumbs.db

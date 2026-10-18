@@ -1,0 +1,19 @@
+{
+  "base_image": "docker.1ms.run/pytorch/pytorch:2.4.1-cuda12.1-cudnn9-devel",
+  "base_manifest_digest": "sha256:9057ed8f4550b37a9715e59ff484fa5502a34e94a5159e02d8174f55ca8be29b",
+  "base_config_digest": "sha256:2641894d738f3cf1ff80f74a77a10d6601ce09e8f37813094ad1a289763f4658",
+  "robotwin": "ea8b21121ebb3cd201ff5b3fe361944ac94eda3f",
+  "xpolicylab": "fa431ecd893ee706883e64fe5fe1464ec8cd928d",
+  "sapien": "d9031a351c39986e51bd0716bc3b51f9a05070d8",
+  "svulkan2": "d764f627e784bcd4fc5a6271d211bea6744270b4",
+  "simsense": "8ab7719390bcb3bfb585368538b4f55bfa0e5456",
+  "curobo": "d64c4b005459db10c5dd867d8b30a87d5bda9bdb",
+  "pytorch3d": "75ebeeaea0908c5527e7b1e305fbc7681382db47",
+  "pybind11_smart_holder_archive": "68a11bb65b774df161c898204d08e85ac2cbac5f",
+  "pybind11_archive_sha256": "cc03b749e1e69faf0ef20927d3e9caa793009f87ed5e0ca8b164c82e0a5bd081",
+  "mesa_vulkan_drivers": "25.0.7~kisak3~j",
+  "asset_repository": "TianxingChen/RoboTwin2.0",
+  "asset_revision": "3dc3b798668feb99ac61cc9086d84cbcc3d79186",
+  "embodiments_zip_sha256": "85ffeff55a5066def5931224a85cfa3f8abaa1fbf779bd17789a7fb3f85bc789",
+  "cuda_arch": "8.9"
+}

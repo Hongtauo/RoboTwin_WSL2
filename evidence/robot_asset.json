@@ -1,0 +1,17 @@
+{
+  "archive": "embodiments.zip",
+  "assets_root": "/workspace/RoboTwin/assets",
+  "crc_checked_files": 82,
+  "extracted_files": 82,
+  "repo": "TianxingChen/RoboTwin2.0",
+  "revision": "3dc3b798668feb99ac61cc9086d84cbcc3d79186",
+  "selected_files": 82,
+  "selected_prefix": "embodiments/aloha-agilex/",
+  "selected_uncompressed_bytes": 779877448,
+  "sha256": "85ffeff55a5066def5931224a85cfa3f8abaa1fbf779bd17789a7fb3f85bc789",
+  "size": 219847741,
+  "skipped_matching_files": 0,
+  "status": "success",
+  "tool": "fetch_robot_asset",
+  "verified_archive_path": "/workspace/cache/embodiments-85ffeff55a5066def5931224a85cfa3f8abaa1fbf779bd17789a7fb3f85bc789.zip"
+}

@@ -1,0 +1,16 @@
+# Reference versions read from successful validation metadata; not a standalone installer.
+# Python 3.10.22
+# Full pip-freeze retained outside this repository; local file/editable URLs omitted.
+numpy==1.26.4
+scipy==1.10.1
+torch==2.4.1+cu121
+torchvision==0.19.1+cu121
+sapien==3.0.0b1+wsldzn
+mplib==0.2.1
+pytorch3d==0.7.8
+nvidia-curobo==0.7.8
+warp-lang==1.12.0
+setuptools==69.5.1
+setuptools-scm==8.1.0
+pybind11==2.13.6
+ninja==1.13.2

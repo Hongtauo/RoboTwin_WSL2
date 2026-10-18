@@ -1,0 +1,158 @@
+{
+  "sources": {
+    "original_setup_status": {
+      "sha256": "a525e40b271ca2c2a089eb2709d11aacd2c9927f1959fce9fca482257e6a6efd",
+      "bytes": 2599
+    },
+    "base_environment": {
+      "sha256": "a799ecadc47ae83571c0e7633306a7c6fdf7770f5a0bfd525ab54b82da449442",
+      "bytes": 401
+    },
+    "sapien_physics": {
+      "sha256": "d8c5d5714d0034298407fc323715ebd905041a2d29f7b4cba20cf7591d51cf55",
+      "bytes": 110
+    },
+    "sapien_render": {
+      "sha256": "bc0206b517c4ad5a67e11dc43feea4dbbfc7cf08e95c91b87bf961a810047f57",
+      "bytes": 279
+    },
+    "cuda_extensions_installed_metadata": {
+      "sha256": "695ce7e1daed8d6ce54f6469dc1dafbe9395306df74bad6ce2ae6d3cb0e7f56d",
+      "bytes": 281
+    },
+    "cuda_extensions_smoke": {
+      "sha256": "3a383196547aec6e82ea1b68050377052d97e39cca8f0954d9b3a21df2c0cfd0",
+      "bytes": 584
+    },
+    "official_robot_asset_provenance": {
+      "sha256": "a707120ae86d9629e9c47602b579df5120aee78f1ad3e1b4f34297a941baedde",
+      "bytes": 662
+    },
+    "successful_robotwin_seed0_task": {
+      "sha256": "1fe73e548363941e3d987e1df435dd7444dfdeffe25ecfc76dc89b9cf49e6eed",
+      "bytes": 12155
+    },
+    "sapien_raster_png": {
+      "sha256": "7803fa4b21abd790095ef121aa7db00cead73460f6ec1168f16c3ad803c4af6b",
+      "bytes": 400
+    },
+    "initial_task_png": {
+      "sha256": "1241b6f391c394a6df211e3a7785875e062ea8fecee240b5bde22795d979a209",
+      "bytes": 8615
+    },
+    "final_task_png": {
+      "sha256": "9b6e22135eebdc765ea24e6ff475ef31f41c6f5c50a934f0e21d527ed5700d3f",
+      "bytes": 27963
+    },
+    "snapshot_roundtrip_log": {
+      "sha256": "820f3e30b3b486ad67002243b1dc97210a5a577c37271752d023cd65fcd8a1f4",
+      "bytes": 1908
+    },
+    "full_vulkan_report": {
+      "sha256": "538823234908c8d10e7c00d85713bad2e636427e26b3faafee7b38f614337c8f",
+      "bytes": 38467
+    },
+    "private_full_pip_freeze_not_copied": {
+      "sha256": "a0006e5f0006bb2d83133c3ad6ca062d556256eacd54bde78430ad5cf623506b",
+      "bytes": 7311
+    }
+  },
+  "png_integrity": [
+    {
+      "file": "sapien_raster.png",
+      "bytes": 400,
+      "sha256": "7803fa4b21abd790095ef121aa7db00cead73460f6ec1168f16c3ad803c4af6b",
+      "copied_byte_for_byte": true
+    },
+    {
+      "file": "robotwin_initial.png",
+      "bytes": 8615,
+      "sha256": "1241b6f391c394a6df211e3a7785875e062ea8fecee240b5bde22795d979a209",
+      "copied_byte_for_byte": true
+    },
+    {
+      "file": "robotwin_final.png",
+      "bytes": 27963,
+      "sha256": "9b6e22135eebdc765ea24e6ff475ef31f41c6f5c50a934f0e21d527ed5700d3f",
+      "copied_byte_for_byte": true
+    }
+  ],
+  "sanitization": "Only known path/instance metadata fields were removed or mapped to generic relative evidence names. Task/physics/render/CUDA numeric measurements and arrays are unchanged. PNG files are original bytes.",
+  "files": [
+    {
+      "file": "base-environment.json",
+      "bytes": 401,
+      "sha256": "a799ecadc47ae83571c0e7633306a7c6fdf7770f5a0bfd525ab54b82da449442"
+    },
+    {
+      "file": "sapien_physics.json",
+      "bytes": 110,
+      "sha256": "d8c5d5714d0034298407fc323715ebd905041a2d29f7b4cba20cf7591d51cf55"
+    },
+    {
+      "file": "sapien_render.json",
+      "bytes": 256,
+      "sha256": "ed31c09b5ddcc6a04d7b88eaf050be83953af11c95ce5218e3e013080e23b8f3"
+    },
+    {
+      "file": "cuda_extensions.json",
+      "bytes": 584,
+      "sha256": "3a383196547aec6e82ea1b68050377052d97e39cca8f0954d9b3a21df2c0cfd0"
+    },
+    {
+      "file": "installed-core-metadata.json",
+      "bytes": 281,
+      "sha256": "695ce7e1daed8d6ce54f6469dc1dafbe9395306df74bad6ce2ae6d3cb0e7f56d"
+    },
+    {
+      "file": "robot_asset.json",
+      "bytes": 662,
+      "sha256": "a707120ae86d9629e9c47602b579df5120aee78f1ad3e1b4f34297a941baedde"
+    },
+    {
+      "file": "robotwin_task.json",
+      "bytes": 11928,
+      "sha256": "15188a3562cc09c9c27f368477d2cef696f9856a74a19a5368c327cb3b32e5a9"
+    },
+    {
+      "file": "sapien_raster.png",
+      "bytes": 400,
+      "sha256": "7803fa4b21abd790095ef121aa7db00cead73460f6ec1168f16c3ad803c4af6b"
+    },
+    {
+      "file": "robotwin_initial.png",
+      "bytes": 8615,
+      "sha256": "1241b6f391c394a6df211e3a7785875e062ea8fecee240b5bde22795d979a209"
+    },
+    {
+      "file": "robotwin_final.png",
+      "bytes": 27963,
+      "sha256": "9b6e22135eebdc765ea24e6ff475ef31f41c6f5c50a934f0e21d527ed5700d3f"
+    },
+    {
+      "file": "setup-status.json",
+      "bytes": 1948,
+      "sha256": "2733fdd46f2c6fa88c2b21b477b911009ec9bae1e8498e39c889fcd1bdaac730"
+    },
+    {
+      "file": "snapshot-roundtrip.json",
+      "bytes": 1924,
+      "sha256": "db524fc6e6bb36fab15d6b36e741046085688050d9a16faff64c6e12f1050341"
+    },
+    {
+      "file": "vulkan-summary.json",
+      "bytes": 1078,
+      "sha256": "1499d7bc4d8b19874abad1ae5f0dc4990d06aa7fc8e5ab4c815228f887494236"
+    },
+    {
+      "file": "pinned-packages.txt",
+      "bytes": 431,
+      "sha256": "841596b8766f087ea14790f290736a1d71bb4b438d8fe2a233cc997abdc67b05"
+    },
+    {
+      "file": "validation-summary.json",
+      "bytes": 3159,
+      "sha256": "7c2b0db9ffda98f17ef92eb6840dec38852d757dc06f24892ed0d84e8cbf044c"
+    }
+  ]
+}
